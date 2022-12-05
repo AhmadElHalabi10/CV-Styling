@@ -1,0 +1,375 @@
+/* body{background:red} */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: 0;
+}
+
+header{
+    background-color: #999999;
+    padding-top: 0px;
+    position: absolute;
+    width: 100%;
+    height: 140px;
+}
+
+div .content{
+    padding-top: 230px;
+    width:66%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact{
+    position: absolute;
+    top: 0;
+    right:0;
+    width:50%;
+    height: 140px;
+}
+
+#contact h3{
+    position: absolute;
+    visibility: hidden;
+}
+
+/* #contact .contacts{
+    display: grid;
+
+    height: 140px;
+    font-size: 10px;
+}*/
+
+.contacts dl{
+    display: flex;
+    height: 20px;
+} 
+
+.contact .contact-type{
+    width: 200px;
+    background-color: red;
+    color:white;
+}
+
+.contact .contact-value{
+    width:100%;
+    background-color: black;
+    color: red;
+}
+
+.contact a{
+    color: red;
+    text-decoration: none;
+}
+
+#contact .contacts{
+    margin-top: 10px;
+}
+
+header div{
+    display: flex;
+    margin-left: 350px;
+    color:red;
+}
+
+#about, #competencies{
+    height: 400px;
+}
+
+div .content:first-child{
+    width: 85%;
+}
+
+#about h3, #competencies h3{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: #cccccc;
+    border-bottom-style:solid;
+    border-width: 1px;
+    
+}
+
+.skills .skill{
+    background-color: #cccccc;
+    margin-top: 4px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    padding-left: 10px;
+    color: white;
+    height: 30px;
+    /* background-color: red;     */
+}
+
+
+.skills-primary :first-child span{
+    background-color: red;
+    padding-right: 200px;
+    position: absolute; 
+    height: 25px;
+} 
+
+.skills-primary :nth-child(2) span{
+    background-color: red;
+    position: absolute; 
+    padding-right: 130px;
+    height: 25px;
+}
+
+.skills-primary :last-child span{
+    background-color: red;
+    position: absolute; 
+    padding-right: 0;
+    height: 25px;
+}
+
+.skills-primary{
+    margin-bottom: 20px;
+}
+
+.skills-secondary::before{
+    content: "Other";
+}
+
+.skills-secondary :nth-child(1) span{
+    background-color: red;
+    position: absolute; 
+    padding-right: 500px;
+    height: 25px;
+}
+
+.skills-secondary :nth-child(2) span{
+    background-color: red;
+    position: absolute; 
+    padding-right: 250px;
+    height: 25px;
+}
+
+.skills-secondary :nth-child(3) span{
+    background-color: red;
+    position: absolute; 
+    padding-right: 350px;
+    height: 25px;
+}
+
+.experience h4 {
+    display: flex;
+}
+
+.experience-type, .experience-institution {
+    color: red;
+}
+
+.experience-details{
+    color: #999999;
+    margin-bottom: 20px;
+}
+
+#experiences, #about {
+    padding-right: 20px;
+}
+
+#hobbies ul{
+    margin-left: 30px;
+}
+
+#hobbies h3{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.experience-description{
+    margin-bottom: 20px;
+}
+
+#experiences h3, #education h3{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.experience-date-separator{
+    color: red;
+}
+
+section:not(:last-child) h3 {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+  }
+
+  section:not(:last-child) h3::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -2px;
+    left: 0;
+    background-color: red;
+    border-radius: 50%;
+  }
+
+
+#contact .contacts{
+    display: grid;
+    grid-template-areas: 
+    'email codi'
+    'skype skype'
+    'phon/whats thre'
+    'github usern'
+    'faceb prognam' 
+    ;
+}
+
+.contact-email dt{
+    grid-area: email;
+}
+
+.contact-email dd{
+    grid-area: codi;
+}
+
+
+
+.contact-skype dt{
+    grid-area: skype;
+}
+
+.contact-skype dd{
+    grid-area: skype;
+}
+
+
+
+.contact-phone dd{
+    grid-area: phon/whats;
+}
+
+.contact-phone dt{
+    grid-area: thre;
+}
+
+
+
+.contact-github dd{
+    grid-area: github;
+}
+
+.contact-github dt{
+    grid-area: usern;
+}
+
+
+
+.contact-facebook dd{
+    grid-area: faceb;
+}
+
+.contact-facebook dt{
+    grid-area: prognam;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content{
+    display: grid;
+    grid-template-areas: 
+    'about comp'
+    'exper educ'
+    'hobb hobb'
+    ;
+}
+
+#about {
+    grid-area: about;
+}
+
+#competencies {
+    grid-area: comp;
+}
+
+#experiences {
+    grid-area: exper;
+}
+
+#education {
+    grid-area: educ;
+}
+
+#hobbies {
+    grid-area: hobb;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    .content{
+        display: grid;
+        grid-template-areas: 
+        'about'
+        'comp'
+        'exper'
+        'educ'
+        'hobb'
+        ;
+    }
+
+    header{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    #contact h3{
+        position: absolute;
+        visibility: visible;
+    }
+
+    div hgroup, div figure{
+        padding-bottom: 30px;
+    }
+
+    div header{
+        text-align:center
+    }
+
+    #contact{
+        grid-area : 'cont';
+        position  : block;
+        bottom    : 0;
+        left      : 15%;
+        width     : 50%;
+        height    : 190px;
+    }
+
+    .contact .contact-value{
+        background-color: white;
+    }
+
+    .contact dd{
+        background-color: white;
+    }
+
+    .contact .contact{
+        position: relative;
+    }
